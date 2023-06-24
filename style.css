@@ -1,0 +1,174 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+:root {
+  --blue-color: #0065fe;
+  --dark-color: #141414;
+}
+/* 
+.wrapper {
+  margin: 40px, 145px, 0px, 145px;
+} */
+
+.button {
+  padding: 16px 32px;
+  border-radius: 100px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+.blue.button {
+  background-color: var(--blue-color);
+}
+
+span {
+  color: var(--blue-color);
+}
+
+/* Header Section */
+
+nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 140px;
+  margin-left: 145px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--dark-color);
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+.nav-buttons a {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+#nav-login,
+#nav-url {
+  color: var(--blue-color);
+}
+
+/* Hero section */
+.hero-section {
+  margin-top: 116px;
+  margin-left: 246px;
+  margin-right: 246px;
+  margin-bottom: 80px;
+}
+
+.hero-section ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: auto;
+}
+
+.hero-section .hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin-top: 32px;
+}
+
+.hero-buttons #hero-url {
+  text-decoration: none;
+  color: var(--blue-color);
+  font-size: 16px;
+  font-family: Gilroy-SemiBold;
+}
+
+.hero-section .blue.button {
+  display: flex;
+  width: 142px;
+  height: 44px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  color: #141414;
+  text-align: center;
+  font-size: 48px;
+  font-family: Gilroy-Bold;
+  line-height: 96px;
+}
+
+.hero-section #top-para {
+  color: var(--text-color-main-text, #141414);
+  text-align: center;
+  font-size: 18px;
+  font-family: Gilroy-Medium;
+  line-height: 28px;
+  width: 781px;
+  height: 105px;
+  margin: auto;
+}
+
+.hero-section #hero-mark {
+  margin-left: 400px;
+  margin-top: 0px;
+}
+
+.hero-section ul li {
+  color: var(--blue-color);
+  text-decoration: none;
+}
+
+.hero-image {
+  margin-top: 56px;
+  width: 833px;
+  height: 336.568px;
+  position: relative;
+}
+.hero-image.item {
+  position: absolute;
+  display: inline-flex;
+  left: 85px;
+  bottom: 95px;
+  width: 600px;
+  z-index: 1;
+  height: 150px;
+  padding: 40px 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 24px;
+  border: 0.5px solid var(--primary-400, #005ae2);
+  background: rgba(254, 254, 254, 0.1);
+  backdrop-filter: blur(106px);
+}
+
+.hero-image.item p {
+  color: var(--text-color-main-text, #141414);
+  text-align: center;
+  font-size: 16px;
+  font-family: Gilroy-Medium;
+  line-height: 24px;
+  margin-left: 100px;
+  margin-right: 60px;
+}
+
+.hero-image .background {
+  position: absolute;
+  top: 0px;
+  right: 500px;
+}
+
+/* Oval section */

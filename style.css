@@ -117,8 +117,9 @@ h1 {
 }
 
 .hero-section #hero-mark {
-  margin-left: 400px;
-  margin-top: 0px;
+  position: relative;
+  top: -50px;
+  left: 400px;
 }
 
 .hero-section ul li {
@@ -345,9 +346,8 @@ h1 {
 }
 
 .price-section .price-plans {
-  width: 1088px;
-  height: 627px;
-  /* position: relative; */
+  width: 1200px;
+  height: 650px;
   display: flex;
   align-items: center;
   margin-bottom: 140px;
@@ -387,11 +387,11 @@ h1 {
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
-  width: 212px;
+  width: 230px;
 }
 
 .price-plan .price-feature p {
-  text-align: center;
+  text-align: start;
   font-size: 14px;
   font-family: Gilroy-Medium;
   line-height: 24px;

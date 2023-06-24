@@ -546,11 +546,9 @@ h1 {
 
 /* FAQ section */
 #faq {
-  /* margin-top: 140px; */
   width: 1440px;
   height: 1153px;
   position: relative;
-  /* margin-bottom: 140px; */
 }
 
 #faq .section-title {
@@ -674,4 +672,47 @@ h1 {
 
 .panel {
   display: none;
+}
+
+/* Optimization section */
+.optimization-section {
+  position: relative;
+  margin-top: 0px;
+  width: 1440px;
+  height: 400px;
+  background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+}
+
+#image12 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.optimization-section .optimize {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.optimize h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-family: Gilroy-Bold;
+  line-height: 48px;
+}
+
+.optimization-section .optimize .blue.button {
+  display: flex;
+  width: 200px;
+  height: 48px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

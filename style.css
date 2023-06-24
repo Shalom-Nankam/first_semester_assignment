@@ -447,16 +447,25 @@ h1 {
 
 /* URL Section */
 .url-section {
-  background-image: url(/images/image7.svg);
-  width: 1440px;
+  background: var(
+    --linear-gradient,
+    linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%)
+  );
+  width: 1500px;
   height: 523px;
   position: relative;
+}
+
+#url-image {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 .url-section .url {
   position: absolute;
   top: 50px;
-  right: 400px;
+  right: 500px;
   display: inline-flex;
   padding: 42px;
   flex-direction: column;
@@ -533,4 +542,136 @@ h1 {
   font-size: 14px;
   font-family: Gilroy-Medium;
   line-height: 20px;
+}
+
+/* FAQ section */
+#faq {
+  /* margin-top: 140px; */
+  width: 1440px;
+  height: 1153px;
+  position: relative;
+  /* margin-bottom: 140px; */
+}
+
+#faq .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  color: #141414;
+  text-align: center;
+  font-size: 40px;
+  font-family: Gilroy-Bold;
+  line-height: 48px;
+}
+
+.faq-body {
+  width: 800px;
+  margin: auto;
+  position: absolute;
+  top: 43px;
+  left: 324px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+#image9 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#image10 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#faq {
+  padding-bottom: 6rem;
+}
+
+.faq-header {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.faq-para {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 2rem 0;
+  border-bottom: 1px dotted #d6d6d6;
+}
+
+.panel-title {
+  color: var(--text-color-main-text, #141414);
+  font-size: 20px;
+  font-family: Gilroy-Medium;
+  line-height: 32px;
+  width: 742px;
+}
+
+.panel-content {
+  color: var(--text-color-main-text, #141414);
+  font-size: 16px;
+  font-family: Gilroy-Medium;
+  line-height: 32px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.panel:checked ~ .panel-content {
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 3rem;
+  margin-left: 6px;
+  margin-top: 0px;
+  z-index: 5;
+  font-size: 24px;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
 }
